@@ -1,11 +1,47 @@
-[20:54:43] [main/INFO]: Setting user: Player546
-[20:54:44] [Client thread/INFO]: LWJGL Version: 2.9.1
-[20:54:48] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Purple Power
-[20:54:49] [Sound Library Loader/INFO]: Sound engine started
-[20:54:50] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[20:54:51] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[20:54:51] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Purple Power
-[20:54:51] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[20:54:51] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[20:54:52] [Sound Library Loader/INFO]: Sound engine started
-[20:55:06] [Client thread/INFO]: Stopping!
+[20:18:32] [main/INFO]: Setting user: Player703
+[20:18:33] [Client thread/INFO]: LWJGL Version: 2.9.1
+[20:18:38] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Purple Power
+[20:18:39] [Sound Library Loader/INFO]: Sound engine started
+[20:18:40] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[20:18:40] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[20:18:40] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Purple Power
+[20:18:40] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[20:18:40] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[20:18:41] [Sound Library Loader/INFO]: Sound engine started
+[20:18:57] [Client thread/INFO]: Deleting level New World
+[20:18:57] [Client thread/INFO]: Attempt 1...
+[20:19:04] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[20:19:04] [Server thread/INFO]: Generating keypair
+[20:19:04] [Server thread/INFO]: Converting map!
+[20:19:04] [Server thread/INFO]: Scanning folders...
+[20:19:04] [Server thread/INFO]: Total conversion count is 0
+[20:19:05] [Server thread/WARN]: Unable to find spawn biome
+[20:19:06] [Server thread/INFO]: Preparing start region for level 0
+[20:19:07] [Server thread/INFO]: Preparing spawn area: 11%
+[20:19:08] [Server thread/INFO]: Preparing spawn area: 22%
+[20:19:09] [Server thread/INFO]: Preparing spawn area: 35%
+[20:19:10] [Server thread/INFO]: Preparing spawn area: 50%
+[20:19:11] [Server thread/INFO]: Preparing spawn area: 66%
+[20:19:12] [Server thread/INFO]: Preparing spawn area: 81%
+[20:19:13] [Server thread/INFO]: Preparing spawn area: 96%
+[20:19:13] [Server thread/INFO]: Changing view distance to 12, from 10
+[20:19:14] [Server thread/INFO]: Player703[local:E:91b5ea89] logged in with entity id 27 at (-92.5, 95.0, 404.5)
+[20:19:14] [Server thread/INFO]: Player703 joined the game
+[20:19:14] [Server thread/INFO]: Saving and pausing game...
+[20:19:14] [Server thread/INFO]: Saving chunks for level 'adf'/Overworld
+[20:19:17] [Server thread/INFO]: Saving chunks for level 'adf'/Nether
+[20:19:17] [Server thread/INFO]: Saving chunks for level 'adf'/The End
+[20:19:17] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2875ms behind, skipping 57 tick(s)
+[20:19:43] [Server thread/INFO]: Player703 has just earned the achievement [Taking Inventory]
+[20:19:43] [Client thread/INFO]: [CHAT] Player703 has just earned the achievement [Taking Inventory]
+[20:21:04] [Server thread/INFO]: Saving and pausing game...
+[20:21:04] [Server thread/INFO]: Saving chunks for level 'adf'/Overworld
+[20:21:04] [Server thread/INFO]: Saving chunks for level 'adf'/Nether
+[20:21:04] [Server thread/INFO]: Saving chunks for level 'adf'/The End
+[20:21:06] [Server thread/INFO]: Stopping server
+[20:21:06] [Server thread/INFO]: Saving players
+[20:21:06] [Server thread/INFO]: Saving worlds
+[20:21:06] [Server thread/INFO]: Saving chunks for level 'adf'/Overworld
+[20:21:06] [Server thread/INFO]: Saving chunks for level 'adf'/Nether
+[20:21:06] [Server thread/INFO]: Saving chunks for level 'adf'/The End
+[20:21:08] [Client thread/INFO]: Stopping!
