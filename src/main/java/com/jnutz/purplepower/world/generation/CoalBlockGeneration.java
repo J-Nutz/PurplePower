@@ -38,19 +38,19 @@ public class CoalBlockGeneration implements IWorldGenerator {
     {
 
         /** 12 = times it can gen in chunk **/
-        for(int i = 0; i < 12; i++)
+        for(int ic = 0; ic < 10; ic++)
         {
 
-            int randPosX = chunkX + random.nextInt(16);
-            int randPosY = random.nextInt(64);
-            int randPosZ = chunkZ + random.nextInt(16);
+            int crandPosX = chunkX + random.nextInt(16);
+            int crandPosY = random.nextInt(64);
+            int crandPosZ = chunkZ + random.nextInt(16);
 
             /** 2 = is number of blocks per vein **/
-            (new WorldGenMinable(Blocks.coal_block, 2)).generate(world, random, randPosX, randPosY, randPosZ);
+            (new WorldGenMinable(Blocks.coal_block, 2)).generate(world, random, crandPosX, crandPosY, crandPosZ);
 
         }
 
-        for(int ii = 0; ii < 10; ii++)
+        for(int ii = 0; ii < 8; ii++)
         {
 
             int irandPosX = chunkX + random.nextInt(16);
@@ -62,7 +62,7 @@ public class CoalBlockGeneration implements IWorldGenerator {
 
         }
 
-        for(int ig = 0; ig < 8; ig++)
+        for(int ig = 0; ig < 6; ig++)
         {
 
             int grandPosX = chunkX + random.nextInt(16);

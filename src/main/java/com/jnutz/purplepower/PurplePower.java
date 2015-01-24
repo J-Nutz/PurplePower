@@ -1,6 +1,7 @@
 package com.jnutz.purplepower;
 
 import com.jnutz.purplepower.handler.ConfigurationHandler;
+import com.jnutz.purplepower.init.items.ToolInits;
 import com.jnutz.purplepower.local.Locals;
 import com.jnutz.purplepower.proxy.IProxy;
 import com.jnutz.purplepower.world.generation.ModGenerationInit;
@@ -15,35 +16,39 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 public class PurplePower
 {
 
-        @SidedProxy(clientSide = Locals.CLIENT_PROXY_CLASS, serverSide = Locals.SERVER_PROXY_CLASS)
-        public static IProxy proxy;
+	@SidedProxy(clientSide = Locals.CLIENT_PROXY_CLASS, serverSide = Locals.SERVER_PROXY_CLASS)
+	public static IProxy proxy;
 
 
-        @Mod.Instance(Locals.MOD_ID)
-        public static PurplePower instance;
-
-        /**
-         * Register Blocks and items and such *
-         */
-        @Mod.EventHandler
-        public void preInit(FMLPreInitializationEvent event) {
-
-            /** Initializes the config **/
-            ConfigurationHandler.init(event.getSuggestedConfigurationFile());
-            FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
-
-        }
-
-        @Mod.EventHandler
-        public void init(FMLInitializationEvent event) {
-
-                ModGenerationInit.init();
-
-        }
-
-        @Mod.EventHandler
-        public void postInit(FMLPostInitializationEvent event) {
+	@Mod.Instance(Locals.MOD_ID)
+	public static PurplePower instance;
 
 
-        }
+	// Register Blocks and items and such
+
+	@Mod.EventHandler
+	public void preInit(FMLPreInitializationEvent event)
+	{
+
+		// Initializes the config
+		ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+		FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+
+		ToolInits.preInit();
+
+	}
+
+	@Mod.EventHandler
+	public void init(FMLInitializationEvent event)
+	{
+
+		ModGenerationInit.init();
+
+	}
+
+	@Mod.EventHandler
+	public void postInit(FMLPostInitializationEvent event)
+	{
+
+	}
 }
