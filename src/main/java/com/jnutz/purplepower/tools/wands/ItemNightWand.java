@@ -21,7 +21,7 @@ public class ItemNightWand extends WandCore {
         if (!world.isRemote)
         {
 
-            world.setWorldTime(13000);
+            world.setWorldTime(14000);
 
         }
 
