@@ -4,7 +4,7 @@ import com.jnutz.purplepower.handler.ConfigurationHandler;
 import com.jnutz.purplepower.init.items.ToolInits;
 import com.jnutz.purplepower.local.Locals;
 import com.jnutz.purplepower.proxy.IProxy;
-import com.jnutz.purplepower.world.generation.ModGenerationInit;
+import com.jnutz.purplepower.world.generation.ModGeneration;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -42,7 +42,7 @@ public class PurplePower
 	public void init(FMLInitializationEvent event)
 	{
 
-		ModGenerationInit.init();
+		ModGeneration.init();
 
 	}
 
