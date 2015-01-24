@@ -14,7 +14,7 @@ public class ModGenerationInit
 
     public static void initOreGen(){
 
-        registerWorldGen(new CoalBlockGeneration(), 1);
+        registerWorldGen(new OreBlockGeneration(), 1);
         //registerWorldGen(new IronBlockGeneration(), 1);
         System.out.println("Why...");
 
