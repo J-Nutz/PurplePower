@@ -5,7 +5,8 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class ItemNightWand extends WandCore {
+public class ItemNightWand extends WandCore
+{
 
     public ItemNightWand()
     {
@@ -16,9 +17,10 @@ public class ItemNightWand extends WandCore {
     }
 
     @Override
-    public ItemStack onItemRightClick(ItemStack NWandParts, World world, EntityPlayer player) {
+    public ItemStack onItemRightClick(ItemStack NWandParts, World world, EntityPlayer player)
+    {
 
-        if (!world.isRemote)
+        if(!world.isRemote)
         {
 
             world.setWorldTime(14000);

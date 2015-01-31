@@ -182,8 +182,10 @@
   <component name="ProjectDictionaryState">
     <dictionary name="Jonah">
       <words>
+        <w>bvalue</w>
         <w>crand</w>
         <w>drand</w>
+        <w>inits</w>
         <w>irand</w>
       </words>
     </dictionary>
