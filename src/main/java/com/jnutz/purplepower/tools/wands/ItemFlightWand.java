@@ -52,7 +52,8 @@ public class ItemFlightWand extends WandCore
 
 		if(allowFlight)
 		{
-			if(entity instanceof EntityPlayer)
+			//if(entity instanceof EntityPlayer (?)
+			if(entity != null)
 			{
 
 				player.capabilities.allowFlying = true;
