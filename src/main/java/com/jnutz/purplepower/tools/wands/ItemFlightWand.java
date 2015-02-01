@@ -9,6 +9,7 @@ import net.minecraft.world.World;
 public class ItemFlightWand extends WandCore
 {
 
+	//For Toggling Flight onUpdate
 	public boolean allowFlight;
 
 	public ItemFlightWand()
@@ -24,6 +25,7 @@ public class ItemFlightWand extends WandCore
 	public ItemStack onItemRightClick(ItemStack FlightWandParts, World world, EntityPlayer player)
 	{
 
+		//Broke Flight In Creative
 		if(!player.capabilities.isCreativeMode)
 		{
 			if (player.capabilities.allowFlying)

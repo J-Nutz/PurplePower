@@ -1,11 +1,7 @@
 package com.jnutz.purplepower.tools.wands;
 
 import com.jnutz.purplepower.tools.toolCores.WandCore;
-import net.minecraft.block.Block;
-import net.minecraft.client.Minecraft;
-import net.minecraft.entity.item.EntityXPOrb;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
