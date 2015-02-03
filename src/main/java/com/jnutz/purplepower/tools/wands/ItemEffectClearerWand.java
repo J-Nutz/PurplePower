@@ -12,7 +12,6 @@ public class ItemEffectClearerWand extends WandCore
 	{
 
 		super();
-
 		this.setUnlocalizedName("effectClearerWand");
 
 	}

@@ -12,16 +12,15 @@ public class ItemFallingWand extends WandCore
 	{
 
 		super();
-
 		this.setUnlocalizedName("fallingWand");
 
 	}
 
+	//Add Little onRightClick function for fun?
+
 	@Override
 	public void onUpdate(ItemStack FWand, World world, Entity player, int value, boolean bvalue)
 	{
-
-		super.onUpdate(FWand, world, player, value, bvalue);
 
 		player.fallDistance = 0;
 

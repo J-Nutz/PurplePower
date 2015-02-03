@@ -1,22 +1,24 @@
 package com.jnutz.purplepower.tools.wands;
 
+import com.jnutz.purplepower.init.items.ToolInits;
 import com.jnutz.purplepower.tools.toolCores.WandCore;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
+import net.minecraftforge.common.IExtendedEntityProperties;
 
 public class ItemFlightWand extends WandCore
 {
 
-	//For Toggling Flight onUpdate
+	//Create Functions For Enabling/Disabling Flying?
+
 	public boolean allowFlight;
 
 	public ItemFlightWand()
 	{
 
 		super();
-
 		this.setUnlocalizedName("flightWand");
 
 	}
@@ -25,7 +27,6 @@ public class ItemFlightWand extends WandCore
 	public ItemStack onItemRightClick(ItemStack FlightWandParts, World world, EntityPlayer player)
 	{
 
-		//Broke Flight In Creative
 		if(!player.capabilities.isCreativeMode)
 		{
 			if (player.capabilities.allowFlying)
@@ -45,10 +46,12 @@ public class ItemFlightWand extends WandCore
 
 
 	@Override
+
 	public void onUpdate(ItemStack FlWand, World world, Entity entity, int value, boolean bvalue)
 	{
 
 		EntityPlayer player = (EntityPlayer) entity;
+		//IExtendedEntityProperties player2 = (IExtendedEntityProperties) player;
 
 		if(allowFlight)
 		{
@@ -66,12 +69,29 @@ public class ItemFlightWand extends WandCore
 			if (!allowFlight)
 			{
 
+				allowFlight = false;
 				player.fallDistance = 0;
 				player.capabilities.allowFlying = false;
 				player.capabilities.isFlying = false;
 
 			}
 		}
+
+		ItemStack heldItem = player.getHeldItem();
+
+		if(heldItem == null || heldItem.getItem() != ToolInits.flightWand)
+		{
+
+			allowFlight = false;
+
+		}
+		else
+		{
+
+			allowFlight = true;
+
+		}
+
 	}
 
 }

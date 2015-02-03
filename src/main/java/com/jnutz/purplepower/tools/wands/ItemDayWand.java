@@ -17,18 +17,17 @@ public class ItemDayWand extends WandCore
 	}
 
 	@Override
-	public ItemStack onItemRightClick(ItemStack DWandParts, World world, EntityPlayer player)
+	public ItemStack onItemRightClick(ItemStack DayWandParts, World world, EntityPlayer player)
 	{
 
 		if(!world.isRemote)
 		{
-
 			world.setWorldTime(1000);
-
 		}
 
-		return DWandParts;
+		return DayWandParts;
 
 	}
+
 
 }
