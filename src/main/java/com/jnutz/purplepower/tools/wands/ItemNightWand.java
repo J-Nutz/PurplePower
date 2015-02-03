@@ -22,13 +22,10 @@ public class ItemNightWand extends WandCore
 
         if(!world.isRemote)
         {
-
             world.setWorldTime(14000);
-
         }
 
         return NWandParts;
 
     }
-
 }

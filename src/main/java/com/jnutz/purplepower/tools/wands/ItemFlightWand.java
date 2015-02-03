@@ -46,21 +46,16 @@ public class ItemFlightWand extends WandCore
 
 
 	@Override
-
 	public void onUpdate(ItemStack FlWand, World world, Entity entity, int value, boolean bvalue)
 	{
 
 		EntityPlayer player = (EntityPlayer) entity;
-		//IExtendedEntityProperties player2 = (IExtendedEntityProperties) player;
 
 		if(allowFlight)
 		{
-			//if(entity instanceof EntityPlayer (?)
 			if(entity != null)
 			{
-
 				player.capabilities.allowFlying = true;
-
 			}
 		}
 
@@ -68,30 +63,15 @@ public class ItemFlightWand extends WandCore
 		{
 			if (!allowFlight)
 			{
-
 				allowFlight = false;
 				player.fallDistance = 0;
 				player.capabilities.allowFlying = false;
 				player.capabilities.isFlying = false;
-
 			}
 		}
 
 		ItemStack heldItem = player.getHeldItem();
-
-		if(heldItem == null || heldItem.getItem() != ToolInits.flightWand)
-		{
-
-			allowFlight = false;
-
-		}
-		else
-		{
-
-			allowFlight = true;
-
-		}
+		allowFlight = !(heldItem == null || heldItem.getItem() != ToolInits.flightWand);
 
 	}
-
 }

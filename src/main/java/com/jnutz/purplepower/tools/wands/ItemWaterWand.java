@@ -15,7 +15,6 @@ public class ItemWaterWand extends WandCore
 	{
 
 		super();
-
 		this.setUnlocalizedName("waterWand");
 
 	}
@@ -43,5 +42,4 @@ public class ItemWaterWand extends WandCore
 		return WWandParts;
 
 	}
-
 }

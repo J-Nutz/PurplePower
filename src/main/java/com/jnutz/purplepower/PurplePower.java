@@ -1,7 +1,6 @@
 package com.jnutz.purplepower;
 
 import com.jnutz.purplepower.handler.ConfigurationHandler;
-import com.jnutz.purplepower.handler.PlayerHandler;
 import com.jnutz.purplepower.init.blocks.BlockInits;
 import com.jnutz.purplepower.init.items.ToolInits;
 import com.jnutz.purplepower.local.Locals;
@@ -13,7 +12,6 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.common.MinecraftForge;
 
 @Mod(modid = Locals.MOD_ID, name = Locals.MOD_NAME, version = Locals.VERSION, guiFactory = Locals.GUI_FACTORY_CLASS)
 public class PurplePower
@@ -46,7 +44,6 @@ public class PurplePower
 	{
 
 		ModGeneration.init();
-		MinecraftForge.EVENT_BUS.register(new PlayerHandler());
 
 	}
 

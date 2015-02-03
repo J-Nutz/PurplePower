@@ -12,7 +12,6 @@ public class ItemRainDanceWand extends WandCore
 	{
 
 		super();
-
 		this.setUnlocalizedName("rainDanceWand");
 
 	}
@@ -36,5 +35,4 @@ public class ItemRainDanceWand extends WandCore
 		return RWandParts;
 
 	}
-
 }

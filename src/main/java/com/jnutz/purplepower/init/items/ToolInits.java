@@ -26,5 +26,4 @@ public class ToolInits
         GameRegistry.registerItem(effectClearerWand, "effectClearerWand");
 
     }
-
 }

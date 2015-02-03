@@ -57,7 +57,6 @@ public class OreBlockGeneration implements IWorldGenerator {
             int irandPosY = random.nextInt(64);
             int irandPosZ = chunkZ + random.nextInt(16);
 
-
             (new WorldGenMinable(Blocks.iron_block, 2)).generate(world, random, irandPosX, irandPosY, irandPosZ);
 
         }
@@ -68,7 +67,6 @@ public class OreBlockGeneration implements IWorldGenerator {
             int grandPosX = chunkX + random.nextInt(16);
             int grandPosY = random.nextInt(64);
             int grandPosZ = chunkZ + random.nextInt(16);
-
 
             (new WorldGenMinable(Blocks.gold_block, 2)).generate(world, random, grandPosX, grandPosY, grandPosZ);
 
@@ -85,13 +83,10 @@ public class OreBlockGeneration implements IWorldGenerator {
             (new WorldGenMinable(Blocks.diamond_block, 2)).generate(world, random, drandPosX, drandPosY, drandPosZ);
 
         }
-
     }
 
     private void generateEnd(World world, Random random, int chunkX, int chunkZ)
     {
 
     }
-
-
 }

@@ -28,5 +28,4 @@ public class ItemEffectClearerWand extends WandCore
 		return ECWandParts;
 
 	}
-
 }
