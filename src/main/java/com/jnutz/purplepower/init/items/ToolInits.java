@@ -13,6 +13,7 @@ public class ToolInits
     public static final ItemRainDanceWand rainDanceWand = new ItemRainDanceWand();
     public static final ItemWaterWand waterWand = new ItemWaterWand();
     public static final ItemEffectClearerWand effectClearerWand = new ItemEffectClearerWand();
+    public static final ItemFireWand fireWand = new ItemFireWand();
 
     public static void preInit()
     {
@@ -24,6 +25,7 @@ public class ToolInits
         GameRegistry.registerItem(rainDanceWand, "rainDanceWand");
         GameRegistry.registerItem(waterWand, "waterWand");
         GameRegistry.registerItem(effectClearerWand, "effectClearerWand");
+        GameRegistry.registerItem(fireWand, "fireWand");
 
     }
 }

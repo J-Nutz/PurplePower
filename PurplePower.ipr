@@ -183,8 +183,10 @@
     <dictionary name="Jonah">
       <words>
         <w>bvalue</w>
+        <w>craftable</w>
         <w>crand</w>
         <w>drand</w>
+        <w>ender</w>
         <w>inits</w>
         <w>irand</w>
       </words>

@@ -1,4 +1,11 @@
-item.purplepower:nightWand.name=Night Wand
 item.purplepower:dayWand.name=Day Wand
+item.purplepower:effectClearerWand.name=Effect Clearing Wand
+item.purplepower:fallingWand.name=Feather Falling Wand
+item.purplepower:fireWand.name=Fire Wand
+item.purplepower:flightWand.name=Flight Wand
+item.purplepower:nightWand.name=Night Wand
+item.purplepower:rainDanceWand.name=Rain Dance Wand
+item.purplepower:waterWand.name=Water Wand
+
 
 itemGroup.PurpleTab=Purple Power

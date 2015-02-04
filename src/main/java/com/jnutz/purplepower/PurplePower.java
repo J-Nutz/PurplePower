@@ -3,6 +3,7 @@ package com.jnutz.purplepower;
 import com.jnutz.purplepower.handler.ConfigurationHandler;
 import com.jnutz.purplepower.init.blocks.BlockInits;
 import com.jnutz.purplepower.init.items.ToolInits;
+import com.jnutz.purplepower.init.items.ToolRecipes;
 import com.jnutz.purplepower.local.Locals;
 import com.jnutz.purplepower.proxy.IProxy;
 import com.jnutz.purplepower.world.generation.ModGeneration;
@@ -35,6 +36,8 @@ public class PurplePower
 		FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
 
 		ToolInits.preInit();
+		ToolRecipes.preInit();
+
 		BlockInits.preInit();
 
 	}
